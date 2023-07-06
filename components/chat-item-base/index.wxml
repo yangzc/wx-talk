@@ -1,0 +1,8 @@
+<!--components/chat-item-base/index.wxml-->
+<view class="chat-item-base">
+  <image class="chat-item-base-img" src="https://res.wx.qq.com/mmbizwxaopennodelogicsvr_node/dist/images/Group%206_230f61.png" mode="aspectFill"></image>
+  <view class="chat-item-base-content">
+    <text class="chat-item-base-name">十里桂花</text>
+    <slot name="content"></slot>
+  </view>
+</view>

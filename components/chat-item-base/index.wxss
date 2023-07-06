@@ -1,0 +1,16 @@
+/* components/chat-item-base/index.wxss */
+.chat-item-base {
+  display: flex;
+  flex-direction: row;
+  justify-items: start;
+  align-items: initial;
+}
+
+.chat-item-base-img {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.chat-item-base-name {
+  color: red;
+}

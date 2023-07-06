@@ -1,0 +1,4 @@
+<!--components/chat-item-text/index.wxml-->
+<chat-item-base>
+  <!-- <text slot="ss">components/chat-item-text/index.wxml</text> -->
+</chat-item-base>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "chat-item-text": "/components/chat-item-text"
+  }
+}
