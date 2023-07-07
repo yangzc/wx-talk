@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    keyBoardHeight: 0, // 键盘高度
+    keyBoardHeight: 0, // 键盘高度86
     msgItems: [],// 聊天信息
     motto: 'Hello World',
     userInfo: {},

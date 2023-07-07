@@ -9,18 +9,28 @@
 .talk_edit {
   height: fit-content;
   background-color: #f6f6f6;
+  /* background-color: blue; */
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 20rpx;
-  min-height: 80rpx;
+  /* padding:15rpx; */
+  padding-top: 14rpx;
+  padding-bottom: 16rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  /* margin-left: 100rpx; */
+  min-height: 60rpx;
 }
 
 .talk_edit_input {
   background-color: white;
+  /* background-color: red; */
+  /* margin-left: 100rpx; */
   padding-left: 20rpx;
   width: 100%;
-  min-height: 80rpx;
+  margin-top: 0rpx;
+  margin-bottom: 0rpx;
+  min-height: 70rpx;
   flex-grow: 1;
   border-radius: 5rpx;
   display: flex;
