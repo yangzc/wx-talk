@@ -1,4 +1,10 @@
 /**index.wxss**/
+.list_view {
+  padding-top: 30rpx;
+  height: 100vh;
+  background-color: #ededed;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;

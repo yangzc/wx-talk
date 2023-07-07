@@ -19,7 +19,7 @@
   width: 70rpx;
   height: 70rpx;
   margin-top: 4rpx;
-  object-fit: cover;
+  border-radius: 8rpx;
 }
 
 
@@ -27,6 +27,7 @@
   color: #85888d;
   font-size: 22.22rpx;
   margin-bottom: 2rpx;
+  margin-left: -5rpx;
 }
 
 
@@ -41,6 +42,7 @@
 .chat-item-base-right-img {
   width: 70rpx;
   height: 70rpx;
+  border-radius: 8rpx;
 }
 
 .chat-item-base-right-content {

@@ -1,13 +1,10 @@
 <!--index.wxml-->
 <view class="container">
-  <scroll-view style="background-color: aquamarine;">
-    <chat-item-text align="left"></chat-item-text>
+  <scroll-view class="list_view">
+    <chat-item-text align="left" text="sdf" name="十里桂花"></chat-item-text>
     <view style="height: 20rpx;"></view>
-    <chat-item-text align="right"></chat-item-text>
+    <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
     <view style="height: 20rpx;"></view>
-    <!-- <chat-item-text align="left"></chat-item-text>
-    <chat-item-text align="left"></chat-item-text> -->
-    <!-- <view style="background-image: '/assets/devtools-scan.c94a7bc1.png';width: 100rpx; height: 100rpx;"></view> -->
   </scroll-view>
 
   <view class="userinfo" style="display: none;">

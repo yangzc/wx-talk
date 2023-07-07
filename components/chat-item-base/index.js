@@ -10,6 +10,14 @@ Component({
     "align": {
       type: String,
       value: "left"
+    },
+    "name": {
+      type: String,
+      value: "十里桂花"
+    },
+    "head_src": {
+      type: String,
+      value: "https://res.wx.qq.com/mmbizwxaopennodelogicsvr_node/dist/images/Group%206_230f61.png"
     }
   },
 
