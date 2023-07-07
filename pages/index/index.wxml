@@ -5,19 +5,21 @@
   </view>
   <view class="container" style="position: absolute;top: 0;left: 0;width: 100vw; height: 100vh;">
     <scroll-view class="list_view" scroll-y="true">
-      <view style="height: 732rpx;"></view>
-      <chat-item-text align="left" text="value" name="十里桂花"></chat-item-text>
+      <!-- <view style="height: 732rpx;"></view> -->
+      <block wx:for="{{msgItems}}">
+        <chat-item-text align="{{item.msgType === 0? 'left':'right'}}" text="{{item.text}}" name="{{item.name}}"></chat-item-text>
+        <view style="height: 31rpx;"></view>
+      </block>
+      <!-- <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
+      </view><view style="height: 31rpx;"></view>
+      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
+      </view><view style="height: 31rpx;"></view>
+      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
       <view style="height: 31rpx;"></view>
       <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
-      <view style="height: 20rpx;"></view><view style="height: 31rpx;"></view>
+      <view style="height: 31rpx;"></view>
       <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
-      <view style="height: 20rpx;"></view><view style="height: 31rpx;"></view>
-      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
-      <view style="height: 20rpx;"></view><view style="height: 31rpx;"></view>
-      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
-      <view style="height: 20rpx;"></view><view style="height: 31rpx;"></view>
-      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
-      <view style="height: 20rpx;"></view>
+      <view style="height: 20rpx;"></view> -->
     </scroll-view>
     <view class="talk_edit" style="margin-bottom: {{keyBoardHeight}}px;">
       <view class="talk_edit_input">

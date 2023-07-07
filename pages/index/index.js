@@ -4,7 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    keyBoardHeight: 0,
+    keyBoardHeight: 0, // 键盘高度
+    msgItems: [],// 聊天信息
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -24,6 +25,17 @@ Page({
         canIUseGetUserProfile: true
       })
     }
+    var msgItems = [];
+    for(var i=0; i< 10; i++) {
+      msgItems.push({
+        "name": `十里桂花-${i}`,
+        "text": `聊点什么-${i}`,
+        "msgType": i%2
+      });
+    }
+    this.setData({
+      msgItems
+    });
   },
   keyboardHeightChange(event) {
     var keyBoardHeight = event.detail.height;
