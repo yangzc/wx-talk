@@ -1,6 +1,6 @@
 /* components/chat-item-text/index.wxss */
 .chat-item-text-left-content {
-  min-height: 70rpx;
+  min-height: 76rpx;
   width: fit-content;
   background-color: white;
   border-radius: 8rpx;
@@ -22,13 +22,13 @@
   border-top: 20rpx white solid;
   border-bottom: 20rpx transparent solid ;
   border-radius: 5rpx;
-  top: 10rpx;
-  left: -3rpx;
+  top: 18rpx;
+  left: 0rpx;
   transform: rotate(-45deg) translateZ(-1px);
 }
 
 .chat-item-text-right-content {
-  min-height: 70rpx;
+  min-height: 76rpx;
   width: fit-content;
   background-color: white;
   border-radius: 8rpx;
@@ -50,8 +50,8 @@
   border-top: 20rpx transparent solid;
   border-bottom: 20rpx white solid ;
   border-radius: 5rpx;
-  top: 10rpx;
-  right: -3rpx;
+  top: 18rpx;
+  right: 0rpx;
   transform: rotate(-45deg) translateZ(-1px);
 }
 

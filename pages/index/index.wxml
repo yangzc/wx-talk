@@ -1,14 +1,28 @@
 <!--index.wxml-->
-<view class="container">
-  <scroll-view class="list_view">
-    <chat-item-text align="left" text="value" name="十里桂花"></chat-item-text>
-    <view style="height: 20rpx;"></view>
-    <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
-    <view style="height: 20rpx;"></view>
-  </scroll-view>
-  <view class="talk_edit" style="margin-bottom: {{keyBoardHeight}}px;">
-    <view class="talk_edit_input">
-      <textarea class="talk_edit_input_textarea" type="text" focus="false" auto-focus="false" placeholder="请输入内容" confirm-type="send" auto-height="true" maxlength="300" bindkeyboardheightchange="keyboardHeightChange" show-confirm-bar="false" 	cursor-spacing="20" adjust-position="false"></textarea>
+<view>
+  <view style="position: relative;width: 100vw; height: 100vh;display: none;">
+    <image src="/assets/wx1.png" mode="widthFix" style="width: 100vw;"></image>
+  </view>
+  <view class="container" style="position: absolute;top: 0;left: 0;width: 100vw; height: 100vh;">
+    <scroll-view class="list_view" scroll-y="true">
+      <view style="height: 732rpx;"></view>
+      <chat-item-text align="left" text="value" name="十里桂花"></chat-item-text>
+      <view style="height: 31rpx;"></view>
+      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
+      <view style="height: 20rpx;"></view><view style="height: 31rpx;"></view>
+      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
+      <view style="height: 20rpx;"></view><view style="height: 31rpx;"></view>
+      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
+      <view style="height: 20rpx;"></view><view style="height: 31rpx;"></view>
+      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
+      <view style="height: 20rpx;"></view><view style="height: 31rpx;"></view>
+      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
+      <view style="height: 20rpx;"></view>
+    </scroll-view>
+    <view class="talk_edit" style="margin-bottom: {{keyBoardHeight}}px;">
+      <view class="talk_edit_input">
+        <textarea class="talk_edit_input_textarea" type="text" focus="false" auto-focus="false" placeholder="请输入内容" confirm-type="send" auto-height="true" maxlength="300" bindkeyboardheightchange="keyboardHeightChange" show-confirm-bar="false" cursor-spacing="20" adjust-position="false"></textarea>
+      </view>
     </view>
   </view>
 </view>
