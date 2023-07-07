@@ -4,6 +4,14 @@
   flex-direction: row;
   justify-items: start;
   align-items: initial;
+  margin-left: 12rpx;
+}
+
+.chat-item-base-content {
+  display: flex;
+  margin-left: 2rpx;
+  max-width: 400rpx;
+  flex-direction: column;
 }
 
 .chat-item-base-img {
@@ -13,4 +21,5 @@
 
 .chat-item-base-name {
   color: red;
+  font-size: 22.22rpx;
 }
