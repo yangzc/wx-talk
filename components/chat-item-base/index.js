@@ -7,9 +7,9 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    "type": {
-      type: enu,
-      value: ""
+    "align": {
+      type: String,
+      value: "left"
     }
   },
 

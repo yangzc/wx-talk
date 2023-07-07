@@ -1,4 +1,8 @@
 <!--components/chat-item-text/index.wxml-->
-<chat-item-base>
-  <text slot="content">components/chat-item-text/index.wxml</text>
+<chat-item-base align="{{align}}">
+  <view slot="content" class="{{align === 'left'?'chat-item-text-left-content':'chat-item-text-right-content'}}">
+    <view class="chat-item-text-text">
+      <text>你好</text>
+    </view>
+  </view>
 </chat-item-base>

@@ -1,7 +1,16 @@
 <!--index.wxml-->
 <view class="container">
-  <chat-item-text></chat-item-text>
-  <view class="userinfo">
+  <scroll-view style="background-color: aquamarine;">
+    <chat-item-text align="left"></chat-item-text>
+    <view style="height: 20rpx;"></view>
+    <chat-item-text align="right"></chat-item-text>
+    <view style="height: 20rpx;"></view>
+    <!-- <chat-item-text align="left"></chat-item-text>
+    <chat-item-text align="left"></chat-item-text> -->
+    <!-- <view style="background-image: '/assets/devtools-scan.c94a7bc1.png';width: 100rpx; height: 100rpx;"></view> -->
+  </scroll-view>
+
+  <view class="userinfo" style="display: none;">
     <block wx:if="{{canIUseOpenData}}">
       <view class="userinfo-avatar" bindtap="bindViewTap">
         <open-data type="userAvatarUrl"></open-data>
@@ -18,7 +27,7 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
+  <view class="usermotto" style="display: none;">
     <text class="user-motto">{{motto}}</text>
   </view>
 </view>

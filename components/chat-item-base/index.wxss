@@ -1,25 +1,49 @@
 /* components/chat-item-base/index.wxss */
-.chat-item-base {
+.chat-item-left-base {
   display: flex;
   flex-direction: row;
   justify-items: start;
   align-items: initial;
-  margin-left: 12rpx;
+  margin-left: 18rpx;
 }
 
-.chat-item-base-content {
+.chat-item-base-left-content {
   display: flex;
-  margin-left: 2rpx;
-  max-width: 400rpx;
+  margin-left: 16rpx;
+  max-width: 520rpx;
   flex-direction: column;
 }
 
-.chat-item-base-img {
+
+.chat-item-base-left-img {
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 4rpx;
+  object-fit: cover;
+}
+
+
+.chat-item-base-left-name {
+  color: #85888d;
+  font-size: 22.22rpx;
+  margin-bottom: 2rpx;
+}
+
+
+.chat-item-right-base {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-items: start;
+  align-items: start;
+  margin-right: 18rpx;
+}
+
+.chat-item-base-right-img {
   width: 70rpx;
   height: 70rpx;
 }
 
-.chat-item-base-name {
-  color: red;
-  font-size: 22.22rpx;
+.chat-item-base-right-content {
+  margin-right: 16rpx;
+  max-width: 520rpx;
 }

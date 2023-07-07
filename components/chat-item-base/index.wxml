@@ -1,8 +1,16 @@
 <!--components/chat-item-base/index.wxml-->
-<view class="chat-item-base">
-  <image class="chat-item-base-img" src="https://res.wx.qq.com/mmbizwxaopennodelogicsvr_node/dist/images/Group%206_230f61.png" mode="aspectFill"></image>
-  <view class="chat-item-base-content">
-    <text class="chat-item-base-name">十里桂花</text>
-    <slot name="content"></slot>
+<view>
+  <view wx:if="{{align === 'left'}}" class="chat-item-left-base">
+    <image class="chat-item-base-left-img" src="https://res.wx.qq.com/mmbizwxaopennodelogicsvr_node/dist/images/Group%206_230f61.png" mode="aspectFill"></image>
+    <view class="chat-item-base-left-content">
+      <text class="chat-item-base-left-name">十里桂花</text>
+      <slot name="content"></slot>
+    </view>
+  </view>
+  <view wx:if="{{align === 'right'}}"  class="chat-item-right-base">
+    <image class="chat-item-base-right-img" src="https://img-blog.csdn.net/20171017215038471?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDM3NzM3Mg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" mode="aspectFill"></image>
+    <view class="chat-item-base-right-content">
+      <slot name="content"></slot>
+    </view>
   </view>
 </view>
