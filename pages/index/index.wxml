@@ -1,30 +1,14 @@
 <!--index.wxml-->
 <view class="container">
   <scroll-view class="list_view">
-    <chat-item-text align="left" text="sdf" name="十里桂花"></chat-item-text>
+    <chat-item-text align="left" text="value" name="十里桂花"></chat-item-text>
     <view style="height: 20rpx;"></view>
     <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
     <view style="height: 20rpx;"></view>
   </scroll-view>
-
-  <view class="userinfo" style="display: none;">
-    <block wx:if="{{canIUseOpenData}}">
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <open-data type="userNickName"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto" style="display: none;">
-    <text class="user-motto">{{motto}}</text>
+  <view class="talk_edit" style="margin-bottom: {{keyBoardHeight}}px;">
+    <view class="talk_edit_input">
+      <textarea class="talk_edit_input_textarea" type="text" focus="false" auto-focus="false" placeholder="请输入内容" confirm-type="send" auto-height="true" maxlength="300" bindkeyboardheightchange="keyboardHeightChange" show-confirm-bar="false" 	cursor-spacing="20" adjust-position="false"></textarea>
+    </view>
   </view>
 </view>

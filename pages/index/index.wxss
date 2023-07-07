@@ -1,8 +1,40 @@
 /**index.wxss**/
 .list_view {
   padding-top: 30rpx;
-  height: 100vh;
+  height: 0;
   background-color: #ededed;
+  flex-grow: 1;
+}
+
+.talk_edit {
+  height: fit-content;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20rpx;
+  min-height: 80rpx;
+}
+
+.talk_edit_input {
+  background-color: white;
+  padding-left: 20rpx;
+  width: 100%;
+  min-height: 80rpx;
+  flex-grow: 1;
+  border-radius: 5rpx;
+  display: flex;
+  align-items: center;
+}
+
+.talk_edit_input_textarea {
+  /* flex-grow: 1; */
+  width: 100%;
+  /* background-color: red; */
+}
+
+.talk_edit_send {
+  /* width: 100rpx; */
 }
 
 .userinfo {
