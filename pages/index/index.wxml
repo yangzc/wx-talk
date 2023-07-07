@@ -4,10 +4,10 @@
     <image src="/assets/wx1.png" mode="widthFix" style="width: 100vw;"></image>
   </view>
   <view class="container" style="position: absolute;top: 0;left: 0;width: 100vw; height: 100vh;">
-    <scroll-view class="list_view" scroll-y="true">
+    <scroll-view class="list_view" scroll-y="true" scroll-into-view="chat_item_id_{{msgItems.length-1}}">
       <!-- <view style="height: 732rpx;"></view> -->
       <block wx:for="{{msgItems}}">
-        <chat-item-text align="{{item.msgType === 0? 'left':'right'}}" text="{{item.text}}" name="{{item.name}}"></chat-item-text>
+        <chat-item-text id="chat_item_id_{{item.id}}" align="{{item.msgType === 0? 'left':'right'}}" text="{{item.text}}" name="{{item.name}}"></chat-item-text>
         <view style="height: 31rpx;"></view>
       </block>
       <!-- <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
