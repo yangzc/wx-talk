@@ -1,2 +1,11 @@
 <!--components/chat-edit-bar/index.wxml-->
-<text>components/chat-edit-bar/index.wxml</text>
+<view class="msg_edit_bar" style="margin-bottom: {{keyBoardHeight}}px;">
+  <view class="msg_edit_bar_img" style="margin-left: 4rpx;display: flex; align-items: center; justify-content: center;">
+    <image src="/assets/edit_bar_voice.png" webp="true" mode="aspectFill" style="width: 100%;height: 100%;filter: grayscale(100%) saturate(0); "></image>
+  </view>
+  <view class="msg_edit_bar_input">
+    <textarea class="msg_edit_bar_input_textarea" type="text" placeholder="请输入内容" confirm-type="send" auto-height="true" maxlength="300" bindkeyboardheightchange="onKeyboardHeightChange" cursor-spacing="16"></textarea>
+  </view>
+  <image src="/assets/edit_bar_emoji.png" class="msg_edit_bar_img" style="margin-right: 20rpx;" mode="aspectFill"></image>
+  <image src="/assets/edit_bar_more.png" class="msg_edit_bar_img" style="margin-right: 2rpx;"></image>
+</view>

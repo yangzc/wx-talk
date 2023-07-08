@@ -3,63 +3,6 @@
   padding-top: 30rpx;
   height: 0;
   /* height: calc(100% - 130rpx); */
-  background-color: #ededed;
+  /* background-color: #ededed; */
   flex-grow: 1;
-}
-
-.talk_edit {
-  height: fit-content;
-  background-color: #f6f6f6;
-  /* background-color: blue; */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 14rpx;
-  padding-bottom: 16rpx;
-  padding-left: 15rpx;
-  padding-right: 15rpx;
-}
-
-.talk_edit_input {
-  background-color: white;
-  /* background-color: red; */
-  /* margin-left: 100rpx; */
-  padding-left: 20rpx;
-  width: 100%;
-  margin-top: 0rpx;
-  margin-bottom: 0rpx;
-  min-height: 70rpx;
-  flex-grow: 1;
-  border-radius: 5rpx;
-  display: flex;
-  align-items: center;
-}
-
-.talk_edit_input_textarea {
-  /* flex-grow: 1; */
-  width: 100%;
-  /* background-color: red; */
-}
-
-.talk_edit_send {
-  /* width: 100rpx; */
-}
-
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
-}
-
-.userinfo-avatar {
-  overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.usermotto {
-  margin-top: 200px;
 }

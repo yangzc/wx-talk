@@ -28,7 +28,7 @@ Page({
       })
     }
     var msgItems = [];
-    for(var i=0; i< 10; i++) {
+    for(var i=0; i< 30; i++) {
       msgItems.push({
         "id":i,
         "name": `十里桂花-${i}`,
@@ -39,16 +39,16 @@ Page({
     this.setData({
       msgItems,
       scrollTop: 1000* msgItems.length,
-      scrollToView: "chat_item_id_9"
+      scrollToView: `chat_item_id_${msgItems.length-1}`
     });
-    this.scrollToBottom();
   },
   keyboardHeightChange(event) {
-    var keyBoardHeight = event.detail.height;
-    console.log("keyBoardHeight=", keyBoardHeight);
-    this.setData({
-      keyBoardHeight,
-    });
+    console.log("11111", this.data, "===>111111");
+    // var keyBoardHeight = event.detail.height;
+    // console.log("keyBoardHeight=", keyBoardHeight);
+    // this.setData({
+    //   keyBoardHeight,
+    // });
     this.scrollToBottom();
   },
   scrollToBottom() {
@@ -61,12 +61,14 @@ Page({
     // });
     // query.exec(res=>{});
     // this.setData();
+    console.log(this.data.msgItems);
+    var lastMsgItemId = `chat_item_id_${this.data.msgItems.length-1}`
     this.setData({
-      scrollToView: "chat_item_id_9"
+      scrollToView: lastMsgItemId
     });
-    this.setData({
-      scrollTop: msgItems.length * 1000
-    });
+    // this.setData({
+    //   scrollTop: msgItems.length * 1000
+    // });
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗

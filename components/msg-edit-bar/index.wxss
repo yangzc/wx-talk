@@ -1,23 +1,33 @@
 /* components/chat-edit-bar/index.wxss */
-.talk_edit {
+.msg_edit_bar {
   height: fit-content;
   background-color: #f6f6f6;
   /* background-color: blue; */
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-top: 14rpx;
-  padding-bottom: 16rpx;
+  padding-top: 15rpx;
+  padding-bottom: 17.7rpx;
   padding-left: 15rpx;
   padding-right: 15rpx;
 }
 
-.talk_edit_input {
+.msg_edit_bar_img {
+  width: 45rpx;
+  height: 45rpx;
+  /* border: black solid 5rpx; */
+  /* border-radius: 50%; */
+  /* margin-left: 10rpx; */
+}
+
+.msg_edit_bar_input {
   background-color: white;
   /* background-color: red; */
-  /* margin-left: 100rpx; */
+  margin-left: 17rpx;
+  margin-right: 17rpx;
   padding-left: 20rpx;
-  width: 100%;
+  /* width: 100%; */
+  width: 0rpx;
   margin-top: 0rpx;
   margin-bottom: 0rpx;
   min-height: 70rpx;
@@ -27,12 +37,8 @@
   align-items: center;
 }
 
-.talk_edit_input_textarea {
+.msg_edit_bar_input_textarea {
   /* flex-grow: 1; */
   width: 100%;
   /* background-color: red; */
-}
-
-.talk_edit_send {
-  /* width: 100rpx; */
 }
