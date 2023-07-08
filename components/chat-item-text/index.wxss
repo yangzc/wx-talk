@@ -9,6 +9,8 @@
   text-overflow: clip;
   word-wrap: break-word;
   max-width: 480rpx;
+  display: flex;
+  align-items: center;
 }
 
 .chat-item-text-left-content::before {
@@ -37,6 +39,8 @@
   text-overflow: clip;
   word-wrap: break-word;
   max-width: 480rpx;
+  display: flex;
+  align-items: center;
 }
 
 .chat-item-text-right-content::after {

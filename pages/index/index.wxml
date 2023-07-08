@@ -4,26 +4,18 @@
     <image src="/assets/wx1.png" mode="widthFix" style="width: 100vw;margin-top: -300rpx;"></image>
   </view>
   <view class="container" style="position: absolute;top: 0;left: 0;width: 100vw; height: 100vh;">
-    <scroll-view class="list_view" scroll-y="true" scroll-into-view="chat_item_id_{{msgItems.length-1}}">
+    <scroll-view class="list_view" scroll-y="true" scroll-into-view="{{scrollToView}}">
       <!-- <view style="height: 732rpx;"></view> -->
-      <block wx:for="{{msgItems}}">
+      <block wx:for="{{msgItems}}" wx:key="id">
         <chat-item-text id="chat_item_id_{{item.id}}" align="{{item.msgType === 0? 'left':'right'}}" text="{{item.text}}" name="{{item.name}}"></chat-item-text>
         <view style="height: 31rpx;"></view>
       </block>
-      <!-- <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
-      </view><view style="height: 31rpx;"></view>
-      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
-      </view><view style="height: 31rpx;"></view>
-      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
-      <view style="height: 31rpx;"></view>
-      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
-      <view style="height: 31rpx;"></view>
-      <chat-item-text align="right" text="sjdfdsf"></chat-item-text>
-      <view style="height: 20rpx;"></view> -->
     </scroll-view>
+    <!-- <msg-edit-bar></msg-edit-bar> -->
     <view class="talk_edit" style="margin-bottom: {{keyBoardHeight}}px;">
       <view class="talk_edit_input">
-        <textarea class="talk_edit_input_textarea" type="text" focus="false" auto-focus="false" placeholder="请输入内容" confirm-type="send" auto-height="true" maxlength="300" bindkeyboardheightchange="keyboardHeightChange" show-confirm-bar="false" cursor-spacing="20" adjust-position="false"></textarea>
+        <textarea class="talk_edit_input_textarea" 
+        type="text" placeholder="请输入内容" confirm-type="send" auto-height="true" maxlength="300" bindkeyboardheightchange="keyboardHeightChange" cursor-spacing="20"></textarea>
       </view>
     </view>
   </view>

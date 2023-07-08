@@ -6,6 +6,8 @@ Page({
   data: {
     keyBoardHeight: 0, // 键盘高度86
     msgItems: [],// 聊天信息
+    scrollTop: 0, //scrollView滚动的位置
+    scrollToView: '',// chat_item_id_{{msgItems.length-1}}
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -35,14 +37,35 @@ Page({
       });
     }
     this.setData({
-      msgItems
+      msgItems,
+      scrollTop: 1000* msgItems.length,
+      scrollToView: "chat_item_id_9"
     });
+    this.scrollToBottom();
   },
   keyboardHeightChange(event) {
     var keyBoardHeight = event.detail.height;
     console.log("keyBoardHeight=", keyBoardHeight);
     this.setData({
-      keyBoardHeight: keyBoardHeight
+      keyBoardHeight,
+    });
+    this.scrollToBottom();
+  },
+  scrollToBottom() {
+    // let query = wx.createSelectorQuery().in(this);
+    // query.select(".list_view").boundingClientRect(res => {
+    //   console.log("scrollHeight", res.height);
+    //   this.setData({
+    //     scrollTop: res.height
+    //   });
+    // });
+    // query.exec(res=>{});
+    // this.setData();
+    this.setData({
+      scrollToView: "chat_item_id_9"
+    });
+    this.setData({
+      scrollTop: msgItems.length * 1000
     });
   },
   getUserProfile(e) {
