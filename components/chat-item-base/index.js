@@ -18,6 +18,10 @@ Component({
     "head_src": {
       type: String,
       value: "https://res.wx.qq.com/mmbizwxaopennodelogicsvr_node/dist/images/Group%206_230f61.png"
+    },
+    "has_background": {
+      type: Boolean,
+      value: true
     }
   },
 

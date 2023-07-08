@@ -1,8 +1,6 @@
 <!--components/chat-item-text/index.wxml-->
-<chat-item-base align="{{align}}" name="{{name}}" head_src="{{head_src}}">
-  <view slot="content" class="{{align === 'left'?'chat-item-text-left-content':'chat-item-text-right-content'}}">
-    <view class="chat-item-text-text">
-      <text>{{text}}</text>
-    </view>
+<chat-item-base align="{{align}}" name="{{name}}" head_src="{{head_src}}" has_background="{{true}}">
+  <view slot="content" class="chat-item-text-text">
+    <text>{{text}}</text>
   </view>
 </chat-item-base>
