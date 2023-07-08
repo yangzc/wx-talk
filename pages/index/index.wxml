@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view>
   <view style="position: relative;width: 100vw; height: 100vh;">
-    <image src="/assets/wx1.png" mode="widthFix" style="width: 100vw;margin-top: -1290rpx;"></image>
+    <image src="/assets/wx1.png" mode="widthFix" style="width: 100vw;margin-top: -1290rpx;display: none;"></image>
   </view>
   <view class="container" style="position: absolute;top: 0;left: 0;width: 100vw; height: 100vh;">
     <scroll-view class="list_view" scroll-y="true" scroll-into-view="{{scrollToView}}">

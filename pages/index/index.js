@@ -31,7 +31,7 @@ Page({
     for(var i=0; i< 30; i++) {
       msgItems.push({
         "id":i,
-        "name": `十里桂花-${i}`,
+        "name": `十里桂花`,
         "text": `聊点什么-${i}`,
         "msgType": i%2
       });

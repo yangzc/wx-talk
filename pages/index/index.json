@@ -2,5 +2,6 @@
   "usingComponents": {
     "chat-item-text": "/components/chat-item-text",
     "msg-edit-bar": "/components/msg-edit-bar"
-  }
+  },
+  "navigationBarTitleText": "十里桂花"
 }

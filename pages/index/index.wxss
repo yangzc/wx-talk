@@ -3,6 +3,6 @@
   padding-top: 30rpx;
   height: 0;
   /* height: calc(100% - 130rpx); */
-  /* background-color: #ededed; */
+  background-color: #ededed;
   flex-grow: 1;
 }
