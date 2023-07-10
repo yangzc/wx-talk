@@ -1,0 +1,4 @@
+<!--pages/test/index.wxml-->
+<view>
+  <keyboard-emoji></keyboard-emoji>
+</view>

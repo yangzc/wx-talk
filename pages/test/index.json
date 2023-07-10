@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "keyboard-emoji": "/components/msg-edit-bar/keyboard-emoji"
+  }
+}
