@@ -1,0 +1,2 @@
+<!--components/msg-item/index.wxml-->
+<text>{{msg_item}}--- {{test}}</text>

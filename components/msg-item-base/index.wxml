@@ -1,0 +1,20 @@
+<!--components/msg-item-base/index.wxml-->
+<view>
+  <view wx:if="{{align === 'left'}}" class="msg-item-left-base">
+    <image class="msg-item-base-left-img" src="{{ head_src }}" mode="aspectFill"></image>
+    <view class="msg-item-base-left">
+      <text class="msg-item-base-left-name">{{name}}</text>
+      <view class="{{has_background? 'msg-item-base-left-content':''}}">
+        <slot name="content"></slot>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{align === 'right'}}" class="msg-item-right-base">
+    <image class="msg-item-base-right-img" src="{{ head_src }}" mode="aspectFill"></image>
+    <view class="msg-item-base-right">
+      <view class="{{has_background? 'msg-item-base-right-content':''}}">
+        <slot name="content"></slot>
+      </view>
+    </view>
+  </view>
+</view>

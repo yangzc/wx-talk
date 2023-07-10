@@ -1,6 +1,0 @@
-<!--components/chat-item-text/index.wxml-->
-<chat-item-base align="{{align}}" name="{{name}}" head_src="{{head_src}}" has_background="{{true}}">
-  <view slot="content" class="chat-item-text-text">
-    <text>{{text}}</text>
-  </view>
-</chat-item-base>

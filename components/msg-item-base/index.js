@@ -1,4 +1,4 @@
-// components/chat-item-base/index.js
+// components/msg-item-base/index.js
 Component({
   options: {
     multipleSlots: true

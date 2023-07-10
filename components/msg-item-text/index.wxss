@@ -1,5 +1,5 @@
-/* components/chat-item-text/index.wxss */
-.chat-item-text-text {
+/* components/msg-item-text/index.wxss */
+.msg-item-text-text {
   font-size: 27rpx;
   color: #0e131a;
   padding: 16rpx;
@@ -8,7 +8,7 @@
 /**
 css 样式中不支持引用本地图片
 */
-.chat-item-text-content-back {
+.msg-item-text-content-back {
   border-image-source: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAAB4CAQAAACOPwKHAAAAGG5wT2wCAAAAAAAAAAAAAAAAAAAA1YkxQv8AAAC/QNwTAAAAVG5wVGMAAgIJIAAAACgAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAEgAAABLAAAATQAAAFAAAAABAAAAAQAAAAEAAAAB/////wAAAAEAAAABAAAAAQAAAAF25olrAAADpUlEQVR42u3dy2sTQQAG8G/20W0ai21pwGK9aaqCFQuiBz3pUWk8qaA9iRexiMf2Viv+FV58Yb244lUQr1KFKpaalqpYTWq0idrNo8nueLBohZ1N4kEk831z21mW7I+Z3VkyuyOmUS8mJAR8GDD7aymRQlImZDtaKKIsckhL13JrS/LX+QKiYZw+YxKnu4OueAw2jFayQYAqSih4eSGn5LiZaRZnGDd7nb42E60cH9m1XAUj0v2J01gTGBW3k539LU4DmNjaluwUtzC63t0aaDnD4vbuuA1dUsWsJ8/4biM4febrZGcHdEoR6e/+ADKGjehiTPY6etEAHUg44qoNMRO9X7+fHoyZ0C0+XhTNAasWvVeqJ9CPBjDRjZWUIRBZUl1xaJmuDnGi3q08GdPTBjFghyWj90nYmuLYkIl6OO2GpjgGpLbn3iAQQxziEIc4xCEOcVoxkjjqCOKwWxGHOMQhDnGIQxziMMQhDnGIQxziEKd1YjmR1RW2HGW2GVrrRM/sOtxRhqMxTgChrr2U2MxuFZ5rsV09el+QlTUT9sXtca1tlC1nwr68M25xnEOaZnBIo8QhjRKHNEoc0mzIn7MsSPNHNs6yII2yW5FGiUMaJQ5plDhjpFFekp+X9zikCcszGIBPB2W3ujDnlemgwLkuz88Vi5RQ3K3uBKfS3iotFOOch+L4wvev1FCMkB+Lo4uFfECQ8Kfyp8aht18+89YVigO8sg6+zy5XiRKGAywG+z+++1AhSxgOkHEOfJp7x4FPKA6w4hxaefamRJrwfx9WO48UniwUJXFCt1b2Hfv28LUXECc0/tDp4r0FjzjhkUPnvMUCcRQJxJXlbzrjWBaA3x+eaoMPoISXAADzUcnRuuUMRtXmfa1xLGCNA5q/uOYQhwTE+TucaRqoBnpsOerwWxa85hCHOMQhDnGIQxziMMQhDnGIQxziEIc4xCEOCYhDHOIQhzj/fSwRXV8ONF3lKYAo11tTL6frbP8qRK5es5jXdbZ2CUgbEpHlfkHTl/gKnnQNC5HFzWv5gqyPvLDcet1qSU5lNZw0mF2TU1hqYGFlIz2wSdOFlevumRFn54s63bOqmPcwgkxjg0C3NjarzcvVRcx6wRhcoLHF3OHDTOFGwtnS4mvd+8iu5So4Kx8I+E3gwO8TV8XJbtkVj8FusaeOAFWUUPDyhrwrx82MxDpOMweZ6a+lRApJmZDt//4UZHM/tokjibLIIS1dy927tHH7D50PLIZbC69dAAAAAElFTkSuQmCC);
   border-image-slice: 90 30 25 50 fill;
   border-left: 50rpx solid;
