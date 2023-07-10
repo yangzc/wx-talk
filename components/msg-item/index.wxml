@@ -1,2 +1,2 @@
 <!--components/msg-item/index.wxml-->
-<text>{{msg_item}}--- {{test}}</text>
+<msg-item-text wx:if="{{value.type === 'text'}}" id="item_{{value.id}}" align="{{value.align}}" data="{{item.data}}" name="{{item.name}}" head_src="{{value.head_src}}"></msg-item-text>

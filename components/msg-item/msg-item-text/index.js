@@ -16,9 +16,11 @@ Component({
       type: String,
       value: "https://img0.baidu.com/it/u=1752903520,1572100722&fm=253&fmt=auto&app=138&f=JPEG?w=521&h=500"
     },
-    "text": {
-      type: String,
-      value: ""
+    "data": {
+      type: JSON,
+      value: {
+        "text": ""
+      }
     }
   },
 
