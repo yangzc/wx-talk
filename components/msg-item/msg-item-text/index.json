@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "msg-item-base": "/components/msg-item/msg-item-base"
+  }
+}
