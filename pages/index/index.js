@@ -30,13 +30,21 @@ Page({
     }
     var msgItems = [];
     for(var i=0; i< 30; i++) {
+      // "id": "", //唯一ID
+      //   "align": "left", //对齐方式
+      //   "name": "", //名字
+      //   "head_src": "", //头像
+      //   "type": "text", //类型
+      //   "data": {} //扩充数据
       msgItems.push({
         "id":i,
+        "align": i %2 == 0? "left":"right",
         "name": `十里桂花`,
-        "data": {
+        "type": "text",
+        "head_src": "https://img0.baidu.com/it/u=1752903520,1572100722&fm=253&fmt=auto&app=138&f=JPEG?w=521&h=500",
+        "dt": {
           "text": `聊点什么-${i}`
-        },
-        "msgType": i%2
+        }
       });
     }
     this.setData({

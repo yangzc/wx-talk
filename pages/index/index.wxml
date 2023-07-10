@@ -8,7 +8,7 @@
     <scroll-view class="list_view" scroll-y="true" scroll-into-view="{{scrollToView}}">
       <!-- <view style="height: 732rpx;"></view> -->
       <block wx:for="{{msgItems}}" wx:key="id">
-        <msg-item-text id="msg_item_id_{{item.id}}" align="{{item.msgType === 0? 'left':'right'}}" data="{{item.data}}" name="{{item.name}}"></msg-item-text>
+        <msg-item value="{{item}}"></msg-item>
         <view style="height: 31rpx;"></view>
       </block>
     </scroll-view>
