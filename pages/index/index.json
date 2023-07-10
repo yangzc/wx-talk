@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "msg-item-text": "/components/msg-item-text",
+    "msg-item-text": "/components/msg-item/msg-item-text",
     "msg-edit-bar": "/components/msg-edit-bar",
     "msg-item": "/components/msg-item"
   },

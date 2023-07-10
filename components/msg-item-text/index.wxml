@@ -1,6 +1,0 @@
-<!--components/msg-item-text/index.wxml-->
-<msg-item-base align="{{align}}" name="{{name}}" head_src="{{head_src}}" has_background="{{true}}">
-  <view slot="content" class="msg-item-text-text">
-    <text>{{text}}</text>
-  </view>
-</msg-item-base>

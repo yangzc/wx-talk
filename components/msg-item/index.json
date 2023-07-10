@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "msg-item-text": "/components/msg-item-text"
+    "msg-item-text": "/components/msg-item/msg-item-text"
   }
 }
