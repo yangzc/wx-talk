@@ -4,10 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    keyBoardHeight: 0, // 键盘高度86
     msgItems: [],// 聊天信息
     msgItem: {"ss":"yy","kk":"sdf"},//聊天消息
-    scrollTop: 0, //scrollView滚动的位置
     scrollToView: '',// msg_item_id_{{msgItems.length-1}}
     motto: 'Hello World',
     userInfo: {},
@@ -49,7 +47,6 @@ Page({
     }
     this.setData({
       msgItems,
-      scrollTop: 1000* msgItems.length,
       scrollToView: `msg_item_id_${msgItems.length-1}`
     });
   },
@@ -72,7 +69,7 @@ Page({
     // });
     // query.exec(res=>{});
     // this.setData();
-    console.log(this.data.msgItems);
+    console.log("scrollToBottom");
     var lastMsgItemId = `msg_item_id_${this.data.msgItems.length-1}`
     this.setData({
       scrollToView: lastMsgItemId

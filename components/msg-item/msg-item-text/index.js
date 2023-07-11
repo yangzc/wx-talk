@@ -39,7 +39,7 @@ Component({
   },
   lifetimes: {
     attached: function() {
-      console.log("lifetimes===>", JSON.stringify(this.data))
+      // console.log("lifetimes===>", JSON.stringify(this.data))
     }
   }
 })

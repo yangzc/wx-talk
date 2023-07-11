@@ -34,12 +34,12 @@ Component({
         },
         lifetimes: {
           created: function () { // 组件实例创建时调用
-            console.log("msgItem", JSON.stringify(this.data.value));
+            // console.log("msgItem", JSON.stringify(this.data.value));
             // var msgItem = JSON.parse(this.data.msg_item);
           },
           attached: function () { // 进入节点树
             // console.log(this.data.msg_item);
-            console.log("msgItem", JSON.stringify(this.data.value));
+            // console.log("msgItem", JSON.stringify(this.data.value));
           },
           ready: function () { //组件布局完成
 

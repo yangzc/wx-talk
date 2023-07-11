@@ -11,7 +11,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    keyBoardHeight: 0
+    keyBoardHeight: 0,
+    isKeyboardEmoji : false
   },
 
   /**
@@ -25,6 +26,16 @@ Component({
       });
       // 键盘高度变化事件
       this.triggerEvent("keyboardheightchange", event.detail, {
+        composed: false
+      })
+    },
+    onEmojiBtnClick: function() {
+      this.setData({
+        isKeyboardEmoji: !this.data.isKeyboardEmoji
+      });
+      this.triggerEvent("keyboardheightchange", {
+        height: 0
+      }, {
         composed: false
       })
     }
