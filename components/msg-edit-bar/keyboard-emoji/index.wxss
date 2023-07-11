@@ -18,7 +18,10 @@ page {
   float: left;
   width: calc(28rpx * var(--scale));
   height: calc(28rpx * var(--scale));
-  margin: calc((750rpx - 8*28rpx * var(--scale))/16);
+  border-width: calc((750rpx - 8*28rpx * var(--scale))/16);
+  /* border-color: red; */
+  border-style: solid;
+  border-color: transparent;
   font-size: 0;
   text-indent: -999em;
   /* border-bottom: calc(1rpx * var(--scale)) solid #f0f0f0; */
@@ -28,7 +31,7 @@ page {
   background-size: calc(434rpx * var(--scale)) calc(202rpx * var(--scale));
   /* 背景居中 */
   /* 内容区域显示背景图片 */
-  background-clip: content-box;
+  background-clip: padding-box;
 }
 
 .qq_face .qqface0 {
