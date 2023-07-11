@@ -1,22 +1,24 @@
 /* components/msg-edit-bar/edit-bar-emoji/index.wxss */
 /* 小程序根节点是page, 原生根节点是:root */
 page {
-  --scale: 3.3;
+  --scale: 2.2;
 }
 
 .qq_face {
   /* overflow: hidden; */
-  width: calc(28rpx * var(--scale) * 8);
-  /* width: 750rpx; */
+  /* width: calc(28rpx * var(--scale) * 8); */
+  width: 750rpx;
   height: calc(28rpx * var(--scale) * (104/8 + 1));
   /* margin-right: calc(-1rpx * var(--scale)); */
-  background-color: var(--background);
+  /* background-color: var(--background); */
+  /* background-color: red; */
 }
 
 .qq_face a {
   float: left;
   width: calc(28rpx * var(--scale));
   height: calc(28rpx * var(--scale));
+  margin: calc((750rpx - 8*28rpx * var(--scale))/16);
   font-size: 0;
   text-indent: -999em;
   /* border-bottom: calc(1rpx * var(--scale)) solid #f0f0f0; */
@@ -24,11 +26,14 @@ page {
   cursor: pointer;
   background: url(https://res.wx.qq.com/t/wx_fed/webwx/res/static/img/15BPafa.png) no-repeat;
   background-size: calc(434rpx * var(--scale)) calc(202rpx * var(--scale));
-  background-position: center;
+  /* 背景居中 */
+  /* 内容区域显示背景图片 */
+  background-clip: content-box;
 }
 
 .qq_face .qqface0 {
   background-position: 0 0;
+  /* background-color: red; */
 }
 
 .qq_face .qqface1 {
@@ -36,7 +41,7 @@ page {
 }
 
 .qq_face .qqface2 {
-  background-position: calc(-58rpx * var(--scale)) 0
+  background-position: calc(-58rpx * var(--scale)) 0;
 }
 
 .qq_face .qqface3 {
@@ -56,11 +61,12 @@ page {
 }
 
 .qq_face .qqface7 {
-  background-position: calc(-203rpx * var(--scale)) 0
+  background-position: calc(-203rpx * var(--scale)) 0;
+  /* background-color: red; */
 }
 
 .qq_face .qqface8 {
-  background-position: calc(-232rpx * var(--scale)) 0
+  background-position: calc(-232rpx * var(--scale)) 0;
 }
 
 .qq_face .qqface9 {
