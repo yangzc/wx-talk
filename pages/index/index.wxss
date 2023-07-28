@@ -1,6 +1,7 @@
 /**index.wxss**/
 .list_view {
-  padding-top: 30rpx;
+  /* padding-top: 30rpx; */
+  /* padding-bottom: 31rpx; */
   height: 0;
   /* height: calc(100% - 130rpx); */
   background-color: #ededed;

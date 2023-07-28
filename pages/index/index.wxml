@@ -7,8 +7,9 @@
   <view class="container" style="position: absolute;top: 0;left: 0;width: 100vw; height: 100vh;">
     <scroll-view class="list_view" scroll-y="true" scroll-into-view="{{scrollToView}}">
       <!-- <view style="height: 732rpx;"></view> -->
+        <view style="height: 30rpx;"></view>
       <block wx:for="{{msgItems}}" wx:key="id">
-        <msg-item id="msg_item_id_{{item.id}}" value="{{item}}"></msg-item>
+        <msg-item id="msg_item_id_{{item.id}}" value="{{item}}" style="margin-top:30rpx"></msg-item>
         <view style="height: 31rpx;"></view>
       </block>
     </scroll-view>
